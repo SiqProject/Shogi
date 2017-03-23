@@ -8,7 +8,7 @@ class ShogiPlayer {
         Name = name
     }
 
-    func te() {
+    func te() -> Bool {
         // todo
     }
 
