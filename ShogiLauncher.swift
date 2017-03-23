@@ -2,14 +2,14 @@ import Foundation
 
 class ShogiLauncher {
 
-    private init() {
+    init() {
         // init
     }
 
-    func main() {
-        var staff = ShogiStaff()
-        var playerA = ShogiPlayer(name : "A")
-        var playerB = ShogiPlayer(name : "B")
+    func run() {
+        let staff = ShogiStaff()
+        let playerA = ShogiPlayer(name : "A")
+        let playerB = ShogiPlayer(name : "B")
 
         // ready phase
         staff.ready_to_shogi()
@@ -18,8 +18,8 @@ class ShogiLauncher {
         // game phase
         staff.start()
         while staff.end() {
-            var player = staff.switch_player()
-            if player.te() = false {
+            let player = staff.switch_player()
+            if player.te() == false {
                 staff.write_to_result()
                 break
             }

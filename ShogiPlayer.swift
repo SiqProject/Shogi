@@ -4,15 +4,17 @@ class ShogiPlayer {
 
     var Name : String
 
-    private init(name : String) {
+    init(name : String) {
         Name = name
     }
 
     func te() -> Bool {
         // todo
+        return false
     }
 
     func stop_shogitimer() {
         // todo
+        print("Stop Shogi Timer...")
     }
 }
